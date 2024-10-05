@@ -23,7 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.SignUpActivity"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".ui.TaskActivity"/>
+        <activity android:name=".ui.DashboardActivity"/>
+        <activity android:name=".ui.ProfileActivity"/>
     </application>
 
 </manifest>

@@ -11,7 +11,6 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
-import com.example.todolist.MainActivity;
 import com.example.todolist.R;
 import com.example.todolist.adapter.AppDatabase;
 import com.example.todolist.adapter.AppExecutors;
@@ -20,7 +19,6 @@ import com.example.todolist.model.User;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.List;
-import java.util.UUID;
 
 
 public class SignInActivity extends AppCompatActivity {
@@ -84,7 +82,7 @@ public class SignInActivity extends AppCompatActivity {
 
                             // Save user session
                             sessionManagement.createLoginSession(userDb.getUserId(), userDb.getUserName(), userDb.getFullName(), userDb.getGender());
-                            Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+                            Intent intent = new Intent(SignInActivity.this, TaskActivity.class);
                             startActivity(intent);
                         }
                     }

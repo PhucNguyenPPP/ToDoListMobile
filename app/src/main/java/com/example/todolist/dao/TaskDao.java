@@ -16,7 +16,7 @@ public interface TaskDao {
     @Query("SELECT * FROM task")
     List<Task> getAll();
 
-    @Query("SELECT * FROM task WHERE userId in (:userId)")
+    @Query("SELECT * FROM task WHERE userId = (:userId)")
     Task loadTaskByUserId(String userId);
 
     @Insert
